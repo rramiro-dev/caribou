@@ -1,0 +1,66 @@
+.container-help-contact {
+    @include flex-center-column;
+
+    .img-contact {
+        @include flex-center(row);
+        width: 60%;
+
+        .image-contact {
+            width: 90%;
+        }
+    }
+
+    .div-btn-contact {
+        @include flex-center(row);
+        width: 60%;
+        gap: 2rem;
+
+        .btn-contact {
+            @include flex-center(row);
+            gap: 1rem;
+            width: 90%;
+            height: 5rem;
+            padding: 0.5rem auto;
+            background-color: $clr-septenary;
+            border: 1px solid $clr-septenary;
+
+            svg {
+                color: $clr-white;
+            }
+
+            &-name {
+                font-size: $fs-secondary;
+                font-weight: weight(light);
+                color: $clr-white;
+                text-align: center;
+                border-bottom: 1px solid $clr-white;
+            }
+
+            &:hover {
+                background-color: $clr-white;
+                transition: all 0.2s ease-in-out;
+
+                svg {
+                    color: $clr-septenary;
+                }
+
+                .btn-contact-name {
+                    color: $clr-septenary;
+                    border-bottom: 1px solid $clr-septenary;
+                }
+            }
+        }
+    }
+}
+
+.container-info-helpdesk {
+    @include flex-center(row);
+    
+    .img-helpdesk {
+        width: 50%;
+
+        .image-helpdesk {
+            width: 100%;
+        }
+    }
+}

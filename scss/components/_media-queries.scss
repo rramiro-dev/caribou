@@ -1,4 +1,5 @@
 // MEDIA QUERIES TABLET
+// MEDIA QUERIES TABLET
 @include tablet {
     .infoHero {
         @include flex-center(column);
@@ -6,7 +7,7 @@
         padding-bottom: 2.5rem;
     }
 
-    .container-services {
+    .container-services-1 {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
@@ -14,6 +15,62 @@
         align-items: center;
         // width: 50%;
 
+        .container-card {
+            padding-top: 2.5rem;
+        }
+    }
+
+    .container-services-cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-center;
+        align-content: flex-center;
+
+        .services-card {
+            width: 100% !important;
+            padding-bottom: 2.5rem;
+
+            .link-card {
+                width: auto;
+
+                .img-services-card {
+                    width: 30% !important;
+                }
+            }
+        }
+    }
+
+    .container-info-history {
+        width: 100%;
+
+        .pHistory {
+            min-width: 100%;
+        }
+    }
+
+    .containerCards {
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        .cards {
+            @include flex-center(row);
+            width: 100% !important;
+            height: auto;
+
+            .cardImage {
+                width: 50%;
+            }
+
+            .card-info {
+                width: 50%;
+            }
+        }
     }
 
     .infoExperience {
@@ -41,6 +98,7 @@
 }
 
 // MEDIA QUERIES MOBILE
+// MEDIA QUERIES MOBILE
 @include mobile {
     .infoHero {
         @include flex-center(column);
@@ -48,11 +106,11 @@
         padding-bottom: 2.5rem;
     }
 
-    .container-services {
+    .container-services-1 {
         @include flex-center-column;
 
         .container-card {
-            padding-top: 2.5rem;
+            // padding-top: 2.5rem;
             width: 80%
         }
 

@@ -1,0 +1,52 @@
+.containerCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    // padding-top: 2.5rem;
+
+    .cards {
+        @include flex-center-column;
+        width: 15rem;
+        padding: 2rem;
+        /* border: 1px solid #FD7061; */
+        border-radius: 1rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        gap: 0.938rem;
+
+        .cardImage {
+            width: 5rem;
+            border-radius: 1rem ;
+        }
+
+        .card-info {
+            @include flex-center-column;
+            gap: 1rem;
+            text-align: center;
+
+            .cardPersonalObjective {
+                font-size: $fs-quaternary;
+                font-weight: weight(medium);
+                color: $clr-accent;
+            }
+        }
+
+        &:hover {
+            // cursor: pointer;
+            animation-name: cards-animat;
+            animation-timing-function: ease-in;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes cards-animat {
+            0% {transform: rotate(0deg);}
+
+            50% {transform: rotate(3deg);}
+            
+            100% {transform: rotate(-6deg);}
+        }
+    }
+}
