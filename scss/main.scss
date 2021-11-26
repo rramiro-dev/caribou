@@ -1,0 +1,15 @@
+// COMPONENTS
+@import "components/variables";
+@import "components/mixins";
+@import "components/resets";
+@import "components/chat";
+@import "components/header";
+@import "components/footer";
+@import "components/media-queries";
+
+// SECTIONS
+@import "page/home";
+@import "page/about";
+@import "page/services";
+@import "page/searcher";
+@import "page/contact";

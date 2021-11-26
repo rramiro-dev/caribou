@@ -1,0 +1,25 @@
+/* whatsapp */
+.chatIcon {
+    width: 9.375rem;
+    position: fixed;
+    bottom: 0.938rem;
+    right: 0.938rem;
+
+    &:hover {
+        cursor: pointer;
+        animation-name: chat;
+        animation-timing-function: ease;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes chat {
+    0% {
+        transform: translatey(0rem);
+    }
+
+    100% {
+        transform: translatey(-1rem);
+    }
+}

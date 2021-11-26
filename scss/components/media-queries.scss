@@ -1,0 +1,78 @@
+// MEDIA QUERIES TABLET
+@include tablet {
+    .infoHero {
+        @include flex-center(column);
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .container-services {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        // width: 50%;
+
+    }
+
+    .infoExperience {
+        @include flex-center-column;
+
+        .titleExperience {
+            text-align: center;
+        }
+    }
+
+    .columnFooter {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-newsletter {
+        grid-column: 1/4;
+        display: grid;
+        justify-content: center;
+    }
+}
+
+// MEDIA QUERIES MOBILE
+@include mobile {
+    .infoHero {
+        @include flex-center(column);
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .container-services {
+        @include flex-center-column;
+
+        .container-card {
+            padding-top: 2.5rem;
+            width: 80%
+        }
+
+    }
+
+    .container-metrics {
+        @include flex-center-column;
+
+        .metric-item {
+            padding-top: 2.5rem;
+        }
+    }
+
+    .columnFooter {
+        @include flex-center(column);
+
+        .services-footer, .contact-footer, .legal-footer {
+            @include flex-center(column);
+            padding-bottom: 2.5rem;
+            line-height: 2.0;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+// Functions
+// Functions
+@function weight ($weight-name) {
+    @return map-get($font-weight, $weight-name);
+}
+
+// RESETS FLEXBOX
+// RESETS FLEXBOX
+
+@mixin flex-aself-center {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+}
+
+@mixin flex-evenly {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    // align-items: center;
+    align-content: center;
+}
+
+@mixin flex-center($direction) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
+
+@mixin flex-center-column {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    // justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@mixin flex-left($direction) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
+
+@mixin flex-left-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-content: center;
+    align-items: flex-start;
+}
+
+// MEDIA QUERIES
+// MEDIA QUERIES
+@mixin mobile  {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: $desktop) {
+        @content;
+    }
+}

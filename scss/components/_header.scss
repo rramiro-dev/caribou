@@ -1,0 +1,108 @@
+// NAV
+.navbarStyle {
+    background-color: $clr-white;
+    position: sticky;
+    z-index: 0;
+    top: 0;
+
+    .container {
+        a {
+            .titleLogo {
+                font-size: $fs-tertiary;
+                font-weight: weight(medium);
+                color: $clr-secondary;
+            }
+        }
+
+        #navbarNav {
+            ul {
+                .dropdown{
+                    .dropdown-item {
+                        @include flex-left(row);
+                        padding-left: 1.3rem;
+                    }
+
+                    &:hover {
+                        .dropdown-menu {
+                            display: block;
+                        }
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
+
+// HERO
+.hero {
+    background-color: $clr-quaternary;
+    .infoHero {
+        @include flex-left-column;
+        gap: 0.938rem;
+
+        h1 {
+            font-size: $fs-h1;
+            font-weight: weight(medium);
+            span {
+                font-weight: weight(bolder);
+                color: $clr-secondary;
+            }
+        }
+    
+        .subtitleHero {
+            font-size: $fs-secondary;
+            font-weight: weight(regular);
+            color: $clr-soft;
+        }
+
+        .pHero {
+            font-size: $fs-quaternary;
+            font-weight: weight(regular);
+            color: $clr-soft;
+        }
+    }
+
+    .imgHero {
+        @include flex-center(row);
+        .imageHero {
+            width: 90%;
+        }
+    }
+}
+
+// BTN
+.btn-cta {
+    font-family: $ff-secondary;
+    font-size: $fs-secondary;
+    font-weight: weight(regular);
+    color: $clr-white;
+    background-color: $clr-primary;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 0.375rem 1.25rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: $clr-primary;
+        background-color: $clr-white;
+        border: 1px solid $clr-primary;
+    }
+}
+
+.btn-violet {
+    font-family: $ff-secondary;
+    font-size: $fs-quinary;
+    font-weight: weight(regular);
+    color: $clr-white;
+    background-color: $clr-tertiary;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 0.469rem 0.938rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: $clr-secondary;
+        background-color: $clr-white;
+        border: 1px solid $clr-secondary;
+    }
+}

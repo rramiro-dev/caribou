@@ -1,0 +1,42 @@
+// COLORS
+$clr-primary: #006AFF;
+$clr-secondary: #207DFF;
+$clr-tertiary: #6C8AEC;
+$clr-quaternary: #DFECFF;
+$clr-quinary: #0041cb;
+$clr-nav: #434359;
+$clr-soft: #6C85A7;
+$clr-soft-soft: rgba(215, 219, 226, 0.349);
+$clr-titles: #161C2D;
+$clr-white: #ffffff;
+$clr-accent: #FF8A83;
+
+// FONT-FAMILY
+$ff-primary: 'Aleo', serif;
+$ff-secondary: 'Roboto', sans-serif;
+
+// FONT-SIZE
+$fs-h1: 3.75rem;
+$fs-titles: 3.125rem;
+$fs-primary: 2.5rem;
+$fs-secondary: 1.875rem;
+$fs-tertiary: 1.25rem;
+$fs-quaternary: 1.125rem;
+$fs-quinary: 0.938rem;
+
+// FONT-WEIGHT
+$font-weight: (
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "bold": 600,
+    "bolder": 700
+);
+
+// Media queries
+$mobile: 425px;
+$tablet: 991px;
+$desktop: 1440px;
+
+// Width
+$width-chat: 5.625rem;

@@ -1,0 +1,44 @@
+// RESETS
+// RESETS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $clr-soft;
+    border-radius: 1rem;
+}
+
+body {
+    font-family: $ff-primary;
+    font-weight: weight(regular);
+    color: $clr-titles;
+    background-color: $clr-white;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padding-section {
+    padding-top: 6vh;
+    padding-bottom: 10vh;
+}
+
+.title {
+    font-size: $fs-titles;
+    font-weight: weight(light);
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
