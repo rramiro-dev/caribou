@@ -56,7 +56,8 @@ a {
   background-color: #ffffff;
   position: sticky;
   z-index: 0;
-  top: 0; }
+  top: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
   .navbarStyle .container a .titleLogo {
     font-size: 1.25rem;
     font-weight: 500;
@@ -488,8 +489,7 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 2rem;
     align-items: center;
-    justify-items: center;
-    padding-top: 2.5rem; }
+    justify-items: center; }
     .teamMember .containerCards .cards {
       display: flex;
       align-items: center;
@@ -510,17 +510,18 @@ footer {
         font-weight: 500;
         color: #FF8A83; }
       .teamMember .containerCards .cards:hover {
-        cursor: pointer;
         animation-name: cards-animat;
         animation-timing-function: ease-in;
-        animation-duration: 2s;
+        animation-duration: 0.5s;
         animation-fill-mode: forwards; }
 
 @keyframes cards-animat {
   0% {
-    transform: translate(0rem); }
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(3deg); }
   100% {
-    transform: scale(-1rem); } }
+    transform: rotate(-6deg); } }
 
 .container-services .container-services-cards {
   display: flex;
@@ -550,13 +551,84 @@ footer {
         color: #161C2D; }
     .container-services .container-services-cards .services-card:hover {
       cursor: pointer;
-      animation-name: cards;
+      animation-name: cards-services;
       animation-timing-function: ease;
       animation-duration: 0.5s;
-      animation-fill-mode: forwards; }
+      animation-fill-mode: forwards;
+      border: 1px solid rgba(215, 219, 226, 0.349); }
 
-@keyframes cards {
+@keyframes cards-services {
   0% {
-    transform: translatex(0rem); }
+    transform: translate(0rem); }
   100% {
     transform: translate(1rem, -1rem); } }
+
+.container-searchBar .container-search {
+  width: 100%; }
+  .container-searchBar .container-search .search {
+    width: 60%;
+    margin: auto; }
+    .container-searchBar .container-search .search .form-search {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: rgba(138, 174, 209, 0.2) 0px 8px 24px;
+      background-color: #E8F0FE; }
+      .container-searchBar .container-search .search .form-search .input {
+        width: 93%;
+        height: 2.5rem;
+        border: none;
+        border-radius: 1rem;
+        padding-left: 1rem;
+        background-color: #E8F0FE; }
+        .container-searchBar .container-search .search .form-search .input:focus {
+          outline: none; }
+      .container-searchBar .container-search .search .form-search .btn-search {
+        width: auto;
+        border: 0;
+        background: 0; }
+
+.containerCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-items: center; }
+  .containerCards .cards {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 15rem;
+    padding: 2rem;
+    /* border: 1px solid #FD7061; */
+    border-radius: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    gap: 0.938rem; }
+    .containerCards .cards .cardImage {
+      width: 5rem;
+      border-radius: 1rem; }
+    .containerCards .cards .cardPersonalObjective {
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: #FF8A83; }
+    .containerCards .cards:hover {
+      cursor: pointer;
+      animation-name: cards-search;
+      animation-timing-function: ease-in;
+      animation-duration: 0.2s;
+      animation-fill-mode: forwards; }
+
+@keyframes cards-search {
+  0% {
+    transform: translatey(0rem); }
+  100% {
+    transform: translatey(-1rem); } }

@@ -1,0 +1,87 @@
+.container-searchBar {
+
+    .container-search {
+        width: 100%;
+        .search {
+            width: 60%;
+            margin: auto;
+    
+            .form-search {
+                @include flex-center(row);
+                gap: 1rem;
+                width: 100%;
+                border-radius: 1rem;
+                box-shadow: rgba(138, 174, 209, 0.2) 0px 8px 24px;
+                background-color: $clr-senary;
+    
+                .input {
+                    width: 93%;
+                    height: 2.5rem;
+                    border: none;
+                    border-radius: 1rem;
+                    padding-left: 1rem;
+                    background-color: $clr-senary;
+    
+                    &:focus {
+                        outline: none;
+                    }
+                }
+    
+                .btn-search {
+                    width: auto;
+                    border: 0;
+                    background: 0;
+                }
+            }
+        }
+    }
+}
+
+.containerCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    // padding-top: 2.5rem;
+
+    .cards {
+        @include flex-center-column;
+        width: 15rem;
+        padding: 2rem;
+        /* border: 1px solid #FD7061; */
+        border-radius: 1rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        gap: 0.938rem;
+
+        .cardImage {
+            width: 5rem;
+            border-radius: 1rem ;
+        }
+        
+        .cardPersonalObjective {
+            font-size: $fs-quaternary;
+            font-weight: weight(medium);
+            color: $clr-accent;
+        }
+
+        &:hover {
+            cursor: pointer;
+            animation-name: cards-search;
+            animation-timing-function: ease-in;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes cards-search {
+            0% {
+                transform: translatey(0rem);
+            }
+        
+            100% {
+                transform: translatey(-1rem);
+            }
+        }
+    }
+}
