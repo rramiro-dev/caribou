@@ -26,20 +26,11 @@ footer {
         }
 
         .pFooter {
-            // display: flex;
-            // flex-direction: column;
-            // flex-wrap: wrap;
-            // align-items: flex-start;
             @include flex-left-column;
             color: $clr-soft;
             font-size: $fs-quinary;
             padding-top: 0.313rem;
             padding-bottom: 0.313rem;
-        
-            &:hover {
-                color: $clr-nav;
-                cursor: pointer;
-            }
         }
     }
 
@@ -56,8 +47,8 @@ footer {
                 color: $clr-soft;
 
                 &:hover {
-                    color: $clr-nav;
-                    font-weight: weight(bold);
+                    color: $clr-accent;
+                    font-weight: weight(medium);
                 }
             }
 
@@ -127,7 +118,7 @@ footer {
     padding: 0.4rem 1rem 0.4rem 1rem;
     border: 1px solid $clr-quinary;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
         color: $clr-quinary;

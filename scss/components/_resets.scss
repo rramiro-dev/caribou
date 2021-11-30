@@ -33,7 +33,11 @@ a {
 
 .padding-section {
     padding-top: 6vh;
-    padding-bottom: 10vh;
+    padding-bottom: 6vh;
+}
+
+.padding-footer {
+    padding-bottom: calc(10vh - 20%);
 }
 
 .title {

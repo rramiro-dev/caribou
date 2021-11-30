@@ -54,14 +54,14 @@
     
         .subtitleHero {
             font-size: $fs-secondary;
-            font-weight: weight(regular);
-            color: $clr-soft;
+            font-weight: weight(light);
+            color: $clr-titles;
         }
 
         .pHero {
             font-size: $fs-quaternary;
-            font-weight: weight(regular);
-            color: $clr-soft;
+            font-weight: weight(light);
+            color: $clr-titles;
         }
     }
 
@@ -102,8 +102,8 @@
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        color: $clr-secondary;
+        color: $clr-tertiary;
         background-color: $clr-white;
-        border: 1px solid $clr-secondary;
+        border: 1px solid $clr-tertiary;
     }
 }

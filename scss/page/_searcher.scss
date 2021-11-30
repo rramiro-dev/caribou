@@ -30,58 +30,16 @@
                 .btn-search {
                     width: auto;
                     border: 0;
-                    background: 0;
+                    border-radius: 50%;
+                    padding: 5px;
+                    background: none;
+                    color: $clr-titles;
+
+                    &:focus, &:hover {
+                        color: $clr-tertiary;
+                    }
                 }
             }
         }
     }
 }
-
-// .containerCards {
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     grid-template-rows: repeat(2, 1fr);
-//     grid-gap: 2rem;
-//     align-items: center;
-//     justify-items: center;
-//     // padding-top: 2.5rem;
-
-//     .cards {
-//         @include flex-center-column;
-//         width: 15rem;
-//         padding: 2rem;
-//         /* border: 1px solid #FD7061; */
-//         border-radius: 1rem;
-//         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-//         gap: 0.938rem;
-
-//         .cardImage {
-//             width: 5rem;
-//             border-radius: 1rem ;
-//         }
-        
-//         .cardPersonalObjective {
-//             font-size: $fs-quaternary;
-//             font-weight: weight(medium);
-//             color: $clr-accent;
-//         }
-
-//         &:hover {
-//             cursor: pointer;
-//             animation-name: cards-search;
-//             animation-timing-function: ease-in;
-//             animation-duration: 0.2s;
-//             animation-fill-mode: forwards;
-//         }
-
-//         @keyframes cards-search {
-//             0% {
-//                 transform: translatey(0rem);
-//             }
-        
-//             100% {
-//                 transform: translatey(-1rem);
-//             }
-//         }
-//     }
-// }

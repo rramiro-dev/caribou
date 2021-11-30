@@ -25,7 +25,10 @@ a {
 
 .padding-section {
   padding-top: 6vh;
-  padding-bottom: 10vh; }
+  padding-bottom: 6vh; }
+
+.padding-footer {
+  padding-bottom: calc(10vh - 20%); }
 
 .title {
   font-size: 3.125rem;
@@ -79,11 +82,14 @@ a {
     align-content: flex-center; }
     .container-services-cards .services-card {
       width: 100% !important;
-      padding-bottom: 2.5rem; }
+      margin-bottom: 2.5rem; }
       .container-services-cards .services-card .link-card {
-        width: auto; }
+        width: auto;
+        flex-direction: row !important; }
         .container-services-cards .services-card .link-card .img-services-card {
-          width: 30% !important; }
+          width: 20% !important; }
+        .container-services-cards .services-card .link-card .pCard {
+          font-size: 1.875rem !important; }
   .container-info-history {
     width: 100%; }
     .container-info-history .pHistory {
@@ -116,6 +122,17 @@ a {
     flex-wrap: wrap; }
     .infoExperience .titleExperience {
       text-align: center; }
+  .cards {
+    flex-direction: row !important; }
+  .input {
+    width: 85% !important; }
+  .pMetrics {
+    text-align: center !important; }
+  .container-copyright {
+    flex-direction: column-reverse !important;
+    gap: 2rem; }
+    .container-copyright .copyright-text, .container-copyright .copyright-adress {
+      text-align: center; }
   .columnFooter {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -145,6 +162,10 @@ a {
     flex-wrap: wrap; }
     .container-services-1 .container-card {
       width: 80%; }
+  .services-card {
+    margin-bottom: 2rem !important; }
+    .services-card .link-card {
+      flex-direction: row !important; }
   .container-metrics {
     display: flex;
     align-items: center;
@@ -153,22 +174,78 @@ a {
     flex-wrap: wrap; }
     .container-metrics .metric-item {
       padding-top: 2.5rem; }
+  .pExperience {
+    font-size: 1.25rem !important; }
+  .btn-contact-name {
+    font-size: 1.25rem !important; }
+  .input {
+    width: 80% !important; }
   .columnFooter {
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap; }
     .columnFooter .services-footer, .columnFooter .contact-footer, .columnFooter .legal-footer {
       display: flex;
       align-items: center;
       align-content: center;
-      justify-content: center;
       flex-direction: column;
       flex-wrap: wrap;
       padding-bottom: 2.5rem;
-      line-height: 2.0; } }
+      line-height: 2.0; }
+    .columnFooter .container-newsletter {
+      text-align: center; }
+      .columnFooter .container-newsletter .form-footer .input {
+        margin-bottom: 0.5rem; } }
+
+.containerCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-items: center; }
+  .containerCards .cards {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 15rem;
+    padding: 2rem;
+    /* border: 1px solid #FD7061; */
+    border-radius: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    gap: 0.938rem; }
+    .containerCards .cards .cardImage {
+      width: 5rem;
+      border-radius: 1rem; }
+    .containerCards .cards .card-info {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 1rem;
+      text-align: center; }
+      .containerCards .cards .card-info .cardPersonalObjective {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: #FF8A83; }
+    .containerCards .cards:hover {
+      animation-name: cards-animat;
+      animation-timing-function: ease-in;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards; }
+
+@keyframes cards-animat {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(3deg); }
+  100% {
+    transform: rotate(-6deg); } }
 
 .navbarStyle {
   background-color: #ffffff;
@@ -208,12 +285,12 @@ a {
         color: #207DFF; }
     .hero .infoHero .subtitleHero {
       font-size: 1.875rem;
-      font-weight: 400;
-      color: #6C85A7; }
+      font-weight: 300;
+      color: #161C2D; }
     .hero .infoHero .pHero {
       font-size: 1.125rem;
-      font-weight: 400;
-      color: #6C85A7; }
+      font-weight: 300;
+      color: #161C2D; }
   .hero .imgHero {
     display: flex;
     align-items: center;
@@ -248,9 +325,9 @@ a {
   padding: 0.469rem 0.938rem;
   transition: all 0.2s ease-in-out; }
   .btn-violet:hover {
-    color: #207DFF;
+    color: #6C8AEC;
     background-color: #ffffff;
-    border: 1px solid #207DFF; }
+    border: 1px solid #6C8AEC; }
 
 footer {
   background-color: rgba(215, 219, 226, 0.349); }
@@ -279,9 +356,6 @@ footer {
       font-size: 0.938rem;
       padding-top: 0.313rem;
       padding-bottom: 0.313rem; }
-      footer .container-newsletter .pFooter:hover {
-        color: #434359;
-        cursor: pointer; }
   footer .columnFooter .services-footer, footer .columnFooter .contact-footer, footer .columnFooter .legal-footer {
     display: flex;
     align-items: center;
@@ -294,8 +368,8 @@ footer {
       font-weight: 400;
       color: #6C85A7; }
       footer .columnFooter .services-footer .footerSubitems:hover, footer .columnFooter .contact-footer .footerSubitems:hover, footer .columnFooter .legal-footer .footerSubitems:hover {
-        color: #434359;
-        font-weight: 600; }
+        color: #FF8A83;
+        font-weight: 500; }
   footer .container-copyright {
     display: flex;
     align-items: center;
@@ -354,58 +428,10 @@ footer {
   padding: 0.4rem 1rem 0.4rem 1rem;
   border: 1px solid #0041cb;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transition: all 0.1s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .btn-newsltt:hover {
     color: #0041cb;
     background-color: #ffffff; }
-
-.containerCards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 2rem;
-  align-items: center;
-  justify-items: center; }
-  .containerCards .cards {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 15rem;
-    padding: 2rem;
-    /* border: 1px solid #FD7061; */
-    border-radius: 1rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    gap: 0.938rem; }
-    .containerCards .cards .cardImage {
-      width: 5rem;
-      border-radius: 1rem; }
-    .containerCards .cards .card-info {
-      display: flex;
-      align-items: center;
-      align-content: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 1rem;
-      text-align: center; }
-      .containerCards .cards .card-info .cardPersonalObjective {
-        font-size: 1.125rem;
-        font-weight: 500;
-        color: #FF8A83; }
-    .containerCards .cards:hover {
-      animation-name: cards-animat;
-      animation-timing-function: ease-in;
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards; }
-
-@keyframes cards-animat {
-  0% {
-    transform: rotate(0deg); }
-  50% {
-    transform: rotate(3deg); }
-  100% {
-    transform: rotate(-6deg); } }
 
 .container-card {
   display: flex;
@@ -578,8 +604,8 @@ footer {
   align-content: center;
   height: auto; }
   .container-services .container-services-cards .services-card {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 10%;
+    box-shadow: rgba(138, 174, 209, 0.2) 0px 8px 24px;
+    border-radius: 1rem;
     width: 13%;
     height: 15rem; }
     .container-services .container-services-cards .services-card .link-card {
@@ -640,7 +666,12 @@ footer {
       .container-searchBar .container-search .search .form-search .btn-search {
         width: auto;
         border: 0;
-        background: 0; }
+        border-radius: 50%;
+        padding: 5px;
+        background: none;
+        color: #161C2D; }
+        .container-searchBar .container-search .search .form-search .btn-search:focus, .container-searchBar .container-search .search .form-search .btn-search:hover {
+          color: #6C8AEC; }
 
 .container-help-contact {
   display: flex;
