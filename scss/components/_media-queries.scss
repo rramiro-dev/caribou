@@ -90,8 +90,12 @@
         flex-direction: row !important;
     }
 
-    .input {
-        width: 85% !important;
+    .form-search {
+        gap: 0;
+
+        .input {
+            width: 70% !important;
+        }
     }
 
     .pMetrics {
@@ -136,10 +140,20 @@
         @include flex-center-column;
 
         .container-card {
-            // padding-top: 2.5rem;
             width: 80%
         }
 
+    }
+
+    .socialMedia-icon-div {
+
+        .socialMedia-icon {
+            
+            svg {
+                width: 45px;
+                height: 45px;
+            }
+        }
     }
 
     .services-card {
@@ -148,6 +162,10 @@
         .link-card {
             flex-direction: row !important;
         }
+    }
+
+    .form-search {
+        gap: 0;
     }
 
     .container-metrics {
@@ -169,10 +187,6 @@
     .input {
         width: 80% !important;
     }
-
-    // .cards {
-    //     flex-direction: row !important;
-    // }
 
     .columnFooter {
         @include flex-center-column;

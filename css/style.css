@@ -124,8 +124,10 @@ a {
       text-align: center; }
   .cards {
     flex-direction: row !important; }
-  .input {
-    width: 85% !important; }
+  .form-search {
+    gap: 0; }
+    .form-search .input {
+      width: 70% !important; }
   .pMetrics {
     text-align: center !important; }
   .container-copyright {
@@ -162,10 +164,15 @@ a {
     flex-wrap: wrap; }
     .container-services-1 .container-card {
       width: 80%; }
+  .socialMedia-icon-div .socialMedia-icon svg {
+    width: 45px;
+    height: 45px; }
   .services-card {
     margin-bottom: 2rem !important; }
     .services-card .link-card {
       flex-direction: row !important; }
+  .form-search {
+    gap: 0; }
   .container-metrics {
     display: flex;
     align-items: center;
