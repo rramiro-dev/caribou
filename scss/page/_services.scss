@@ -6,7 +6,6 @@
 
 
         .services-card {
-            // border: 1px solid black;
             box-shadow: rgba(138, 174, 209, 0.2) 0px 8px 24px;
             border-radius: 1rem;
             width: 13%;
@@ -20,14 +19,12 @@
 
                 .img-services-card {
                     width: 80%;
-                    // margin: auto;
                 }
     
                 .pCard {
                     font-size: $fs-tertiary;
                     font-weight: weight(medium);
                     color: $clr-titles;
-                    // text-align: center;
                 }
             }
     

@@ -221,7 +221,6 @@ a {
     flex-wrap: wrap;
     width: 15rem;
     padding: 2rem;
-    /* border: 1px solid #FD7061; */
     border-radius: 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     gap: 0.938rem; }
@@ -241,6 +240,7 @@ a {
         font-weight: 500;
         color: #FF8A83; }
     .containerCards .cards:hover {
+      cursor: pointer;
       animation-name: cards-animat;
       animation-timing-function: ease-in;
       animation-duration: 0.5s;
@@ -662,7 +662,7 @@ footer {
       box-shadow: rgba(138, 174, 209, 0.2) 0px 8px 24px;
       background-color: #E8F0FE; }
       .container-searchBar .container-search .search .form-search .input {
-        width: 93%;
+        width: 90%;
         height: 2.5rem;
         border: none;
         border-radius: 1rem;
@@ -671,10 +671,9 @@ footer {
         .container-searchBar .container-search .search .form-search .input:focus {
           outline: none; }
       .container-searchBar .container-search .search .form-search .btn-search {
-        width: auto;
+        width: 5%;
         border: 0;
         border-radius: 50%;
-        padding: 5px;
         background: none;
         color: #161C2D; }
         .container-searchBar .container-search .search .form-search .btn-search:focus, .container-searchBar .container-search .search .form-search .btn-search:hover {

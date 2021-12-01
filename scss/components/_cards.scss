@@ -5,13 +5,11 @@
     grid-gap: 2rem;
     align-items: center;
     justify-items: center;
-    // padding-top: 2.5rem;
 
     .cards {
         @include flex-center-column;
         width: 15rem;
         padding: 2rem;
-        /* border: 1px solid #FD7061; */
         border-radius: 1rem;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         gap: 0.938rem;
@@ -34,7 +32,7 @@
         }
 
         &:hover {
-            // cursor: pointer;
+            cursor: pointer;
             animation-name: cards-animat;
             animation-timing-function: ease-in;
             animation-duration: 0.5s;
