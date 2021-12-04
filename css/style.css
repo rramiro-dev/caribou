@@ -103,15 +103,13 @@ a {
     align-content: flex-start; }
     .containerCards .cards {
       display: flex;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-      flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: center;
       width: 100% !important;
       height: auto; }
       .containerCards .cards .cardImage {
-        width: 50%; }
+        width: 80%; }
       .containerCards .cards .card-info {
         width: 50%; }
   .infoExperience {
@@ -165,12 +163,23 @@ a {
     .container-services-1 .container-card {
       width: 80%; }
   .socialMedia-icon-div .socialMedia-icon svg {
-    width: 45px;
-    height: 45px; }
+    width: 40px;
+    height: 40px; }
   .services-card {
     margin-bottom: 2rem !important; }
     .services-card .link-card {
       flex-direction: row !important; }
+  .containerCards {
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start; }
+    .containerCards .cards .card-info {
+      width: 50%; }
+      .containerCards .cards .card-info .cardPersonalObjective {
+        font-size: 0.938rem !important; }
   .form-search {
     gap: 0; }
   .container-metrics {
@@ -180,6 +189,7 @@ a {
     flex-direction: column;
     flex-wrap: wrap; }
     .container-metrics .metric-item {
+      width: 50% !important;
       padding-top: 2.5rem; }
   .pExperience {
     font-size: 1.25rem !important; }
@@ -237,7 +247,7 @@ a {
       text-align: center; }
       .containerCards .cards .card-info .cardPersonalObjective {
         font-size: 1.125rem;
-        font-weight: 500;
+        font-weight: 300;
         color: #FF8A83; }
     .containerCards .cards:hover {
       cursor: pointer;

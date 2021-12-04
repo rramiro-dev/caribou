@@ -63,12 +63,12 @@
         align-content: flex-start;
 
         .cards {
-            @include flex-center(row);
+            @include flex-evenly;
             width: 100% !important;
             height: auto;
 
             .cardImage {
-                width: 50%;
+                width: 80%;
             }
 
             .card-info {
@@ -149,8 +149,8 @@
         .socialMedia-icon {
             
             svg {
-                width: 45px;
-                height: 45px;
+                width: 40px;
+                height: 40px;
             }
         }
     }
@@ -163,6 +163,26 @@
         }
     }
 
+    .containerCards {
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        .cards {
+
+            .card-info {
+                width: 50%;
+
+                .cardPersonalObjective {
+                    font-size: $fs-quinary !important;
+                }
+            }
+        }
+    }
+
     .form-search {
         gap: 0;
     }
@@ -171,6 +191,7 @@
         @include flex-center-column;
 
         .metric-item {
+            width: 50% !important;
             padding-top: 2.5rem;
         }
     }
