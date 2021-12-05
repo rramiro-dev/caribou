@@ -145,15 +145,42 @@ a {
     justify-content: center; } }
 
 @media (max-width: 425px) {
-  .infoHero {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem; }
+  .hero {
+    background-color: #DFECFF; }
+    .hero .infoHero {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      gap: 0.938rem; }
+      .hero .infoHero h1 {
+        font-size: 2.5rem !important;
+        font-weight: 500; }
+        .hero .infoHero h1 span {
+          font-size: 3.125rem !important;
+          font-weight: 700;
+          color: #207DFF; }
+      .hero .infoHero .subtitleHero {
+        font-size: 1.875rem !important;
+        font-weight: 300;
+        color: #161C2D; }
+      .hero .infoHero .pHero {
+        font-size: 1.125rem !important;
+        font-weight: 300;
+        color: #161C2D; }
+    .hero .imgHero {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .hero .imgHero .imageHero {
+        width: 90%; }
   .container-services-1 {
     display: flex;
     align-items: center;
@@ -231,20 +258,28 @@ a {
     flex-wrap: wrap;
     width: 15rem;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 0.8rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     gap: 0.938rem; }
     .containerCards .cards .cardImage {
       width: 5rem;
-      border-radius: 1rem; }
+      border-radius: 0.8rem; }
     .containerCards .cards .card-info {
       display: flex;
       align-items: center;
       align-content: center;
       flex-direction: column;
       flex-wrap: wrap;
-      gap: 1rem;
       text-align: center; }
+      .containerCards .cards .card-info .cardName {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #161C2D;
+        margin-bottom: 0.5rem; }
+      .containerCards .cards .card-info .cardPosition {
+        font-size: 1.25rem;
+        font-weight: 300;
+        color: #161C2D; }
       .containerCards .cards .card-info .cardPersonalObjective {
         font-size: 1.125rem;
         font-weight: 300;
@@ -295,9 +330,10 @@ a {
     align-items: flex-start;
     gap: 0.938rem; }
     .hero .infoHero h1 {
-      font-size: 3.75rem;
+      font-size: 3.125rem;
       font-weight: 500; }
       .hero .infoHero h1 span {
+        font-size: 3.75rem;
         font-weight: 700;
         color: #207DFF; }
     .hero .infoHero .subtitleHero {
@@ -320,12 +356,13 @@ a {
 
 .btn-cta {
   font-family: "Roboto", sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #ffffff;
   background-color: #006AFF;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 0.375rem 1.25rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.875rem;
   transition: all 0.2s ease-in-out; }
   .btn-cta:hover {
     color: #006AFF;

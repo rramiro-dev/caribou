@@ -129,10 +129,43 @@
 // MEDIA QUERIES MOBILE
 // MEDIA QUERIES MOBILE
 @include mobile {
-    .infoHero {
-        @include flex-center(column);
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
+    .hero {
+        background-color: $clr-quaternary;
+        .infoHero {
+            @include flex-center(column);
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            gap: 0.938rem;
+    
+            h1 {
+                font-size: $fs-primary !important;
+                font-weight: weight(medium);
+                span {
+                    font-size: $fs-titles !important;
+                    font-weight: weight(bolder);
+                    color: $clr-secondary;
+                }
+            }
+        
+            .subtitleHero {
+                font-size: $fs-secondary !important;
+                font-weight: weight(light);
+                color: $clr-titles;
+            }
+    
+            .pHero {
+                font-size: $fs-quaternary !important;
+                font-weight: weight(light);
+                color: $clr-titles;
+            }
+        }
+    
+        .imgHero {
+            @include flex-center(row);
+            .imageHero {
+                width: 90%;
+            }
+        }
     }
 
     .container-services-1 {
