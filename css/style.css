@@ -376,6 +376,7 @@ a {
   color: #ffffff;
   background-color: #6C8AEC;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 0.5rem;
   padding: 0.469rem 0.938rem;
   transition: all 0.2s ease-in-out; }
   .btn-violet:hover {
